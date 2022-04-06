@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+	Example1,
+	Example2,
+	ExampleAsync,
+	WithoutTransition,
+	WithTransition,
+	WithoutSuspense,
+	WithSuspense,
+	BasicSuspense,
+	Shows,
+	DefferedValue
+} from './features/index.js';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<h1>
+				Welcome to React 18, please explore and understand more about the new
+				features
+			</h1>
+			{/* <Example1 />
+			<Example2 />
+			<ExampleAsync /> */}
+			{/* <WithoutTransition /> */}
+			{/* <WithTransition /> */}
+			{/* <WithoutSuspense /> */}
+			{/* <WithSuspense /> */}
+			{/* <BasicSuspense /> */}
+			{/* <Shows /> */}
+			<DefferedValue />
+		</div>
+	);
 }
 
 export default App;
